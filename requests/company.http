@@ -1,0 +1,54 @@
+@api = http://localhost:303/company
+
+### Change localhost to ip, no port enabled.
+@serverApi = http://localhost:303/company
+
+### GET ALL COMPANIES
+GET {{api}}
+
+### CREATE NEW COMPANY
+POST {{api}}
+Content-Type: application/json
+
+{
+    "clave_compania": "Mar",
+      "rfc": "2222",
+      "razon_social": "RAZA",
+      "nombre_corto": "RZ",
+      "nombre_largo": "RAZA SA.DC",
+      "calle": "Pomarrosa",
+      "colonia": "Nueva st Maria",
+      "estado": "CDMX",
+      "codigo_postal": "2232",
+      "contacto_persona": "Mario",
+      "telefono": "2312"
+}
+
+### GET BY ID
+GET {{api}}/1
+
+
+### DELETE BY ID
+DELETE {{api}}/6
+
+
+### UPDATE COMPANY
+
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "clave_compania": "MXN",
+      "rfc": "0000",
+      "razon_social": "MX",
+      "nombre_corto": "Test",
+      "nombre_largo": "Test Company SA.DC",
+      "calle": "Claveria",
+      "colonia": "Nueva st Maria",
+      "estado": "CDMX",
+      "codigo_postal": "2232",
+      "contacto_persona": "Mario",
+      "telefono": "2312"
+}
+
+
