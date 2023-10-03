@@ -1,11 +1,11 @@
 // compañias.controller.mjs
-import { getConnection } from "../db/connection";
-import { Connection, Request, TYPES } from "tedious";
+import { getConnection } from "../api/connection";
+import { Request, TYPES } from "tedious";
 import {
   Request as ExpressRequest,
   Response as ExpressResponse,
 } from "express";
-import queries from "../db/queries";
+import queries from "../api/queries";
 
 // Define a type for the row object
 type RowData = {

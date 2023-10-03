@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts", "src/**/*.js"], // Include both TypeScript and JavaScript files
+  "include": ["src/**/*.ts", "src/**/*.js", "./api/*.ts"], // Include both TypeScript and JavaScript files
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
